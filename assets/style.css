@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    color: #fff;
+}
+
+#game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0ff;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff, 0 0 50px #0ff;
+}
+
+.obstacle {
+    position: absolute;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #f0f, #ff0);
+    box-shadow: 0 0 15px #f0f, 0 0 30px #ff0, 0 0 50px #ff0;
+    top: -50px;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+#highScore {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-shadow: 0 0 5px #ff0;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #ff0;
+    text-shadow: 0 0 20px #ff0, 0 0 40px #ff0;
+    display: none;
+    text-align: center;
+}
+
+#restart {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 22px;
+    background: #0ff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #0ff;
+    transition: transform 0.1s ease;
+}
+
+#restart:hover {
+    transform: scale(1.1);
+}
+
+.particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+.stars {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+}
