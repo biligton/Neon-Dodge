@@ -26,4 +26,4 @@
 1. Open `index.html` in your desktop browser.
 2. Use the arrow keys or A/D to move your player left and right.
 3. Avoid obstacles and try to survive as long as possible.
-4. Watch your score increase and experience the gradual speed challenges!
+
